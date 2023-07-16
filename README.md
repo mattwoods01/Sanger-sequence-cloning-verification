@@ -2,6 +2,7 @@
 Cloning verification script that intakes barcodes and looks for matching sequence within barcodes.  Detects MCS site and returns whether cloning was successful or not based off user inputted reference sheet.  Works with Sanger sequence output .ab1 files.
 
 Adjustable settings found within main:
+```
 MCSregionSequence = 'GAAACACCGACTTGCAGGTGCTTAAGGGATCCAGTATACTGGATCGATTGATCACACCTGCGGAT'
 reference_file = pd.read_excel('Reference.xlsx')
 matching_column = 'Sequence_Construct'
@@ -10,3 +11,4 @@ final_barcode_sequence = 'GTTT'
 target_length = 20
 barcode_score_length = 8
 approximate_matching = False
+```
