@@ -24,6 +24,7 @@ def main():
     print(os.listdir('Sequencing data'))
     for files in os.listdir('Sequencing data'):
         if files.endswith('.ab1'):
+            print(files)
             file_directory = os.path.join('Sequencing data', files)
             handle = open(file_directory, 'rb')
             record_iter = SeqIO.parse(handle, 'abi')
@@ -199,7 +200,6 @@ class MatchClass:
 
         dataframe_check = check_number_of_arguments(*dataframe)
         if dataframe_check == 1:
-            print('single dataframe detected')
             match_results = pd.DataFrame(dataframe).T
         else:
             match_results = pd.concat([*dataframe], axis=1)
