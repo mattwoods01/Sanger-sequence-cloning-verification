@@ -1,4 +1,4 @@
-# Cloning_verification_script
+# Cloning verification script
 Cloning verification script that intakes barcodes and looks for matching sequence within barcodes based off target length.  To be used specifically for Crispr encoding plasmids/libraries that contain sgRNA sequence embedded in user-specified barcodes.  Detects MCS site and returns whether cloning was successful or not based off user inputted reference sheet.  Works with Sanger sequence output .ab1 files.
 
 ```
